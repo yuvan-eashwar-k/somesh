@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-family: Avenir, sans-serif;
+  }
+  
+  .pricing {
+    width: 85%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+  }
+  
+  .card {
+    width: 325px;
+    border-radius: 10px;
+    padding: 30px 20px 59px 20px;
+    border: 0;
+  }
+  
+  .card1 {
+    background: linear-gradient(to bottom right, #FC56F6, #A356FD);
+    box-shadow: 3px 15px 30px rgba(171, 86, 252, 0.75);
+  }
+  
+  .card2 {
+    background: linear-gradient(to bottom right, #56D0FD, #56FD7D);
+    box-shadow: 3px 15px 30px rgba(86, 247, 142, 0.75);
+  }
+  
+  .card3 {
+    background: linear-gradient(to bottom right, #FDBD56, #FD56B6);
+    box-shadow: 3px 15px 30px rgba(253, 99, 169, 0.75);
+  }
+  
+  .card h3 {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 0px;
+  }
+  
+  .card h4 {
+    color: white;
+    font-size: 40px;
+    margin-top: 53px;
+  }
+  
+  .card h2 {
+    color: rgba(255, 255, 255, 0.15);
+    font-size: 118px;
+    font-weight: 900;
+    position: absolute;
+    margin-left: -6px;
+    pointer-events: none;
+  }
+  
+  .card hr {
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.15);
+    margin-top: 53px;
+  }
+  
+  .card p:first-of-type {
+    margin-top: 40px;
+  }
+  
+  .card p {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .card p:nth-of-type(2) {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .card a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 85px 11px 85px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-left: 40px;
+    border-radius: 6px;
+    transition: background-color 0.5s;
+  }
+  
+  .card a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  @media only screen and (max-width: 1900px) {
+    .grid {
+      grid-template-columns: 100%;
+      grid-row-gap: 50px;
+    }
+  } 
+
+
+* {
+  box-sizing: border-box;
+}
+
+.open-button {
+  background-color: black;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  color:black;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
