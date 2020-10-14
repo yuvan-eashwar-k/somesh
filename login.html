@@ -19,7 +19,7 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("img/bg_home.jpg");
+  background-image: url("img/login_bg.jpg");
   min-height: 100%;
 }
 
@@ -35,12 +35,9 @@ body, html {
     <a href="#home" class="w3-bar-item w3-button w3-wide">FITNESS UPDATE</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
       <a href="#team" class="w3-bar-item w3-button">TRAINERS</a>
-      <a href="#work" class="w3-bar-item w3-button">WORK</a>
-      <a href="#pricing" class="w3-bar-item w3-button">PRICING</a>
       <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
-      <a class="w3-bar-item w3-button">LOGIN</a>
+      <a href="index.html" class="w3-bar-item w3-button">SIGN OUT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -61,12 +58,16 @@ body, html {
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
+<header class="bgimg-1 w3-display-container w3-grayscale-min" style="display: flex; align-items: center; justify-content: center;" id="home">
+  <div class="w3-display-left  w3-text-white"  style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-left: auto; margin-right: auto;">
     <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
     <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
-    <p><button class="open-button" onclick="openForm()">Register Now !</button></p>
+    <div class="login">
+        <p class="w3-margin-top w3-margin-top" style="justify-content: center; align-self: center;"><a href="schedule.html" class="open-button w3-round-xxlarge w3-margin-top">View Schedule !</a></p>
+        <p class="w3-margin-top w3-margin-top" style="justify-content: center; align-self: center;"><a href="schedule.html" class="open-button w3-round-xxlarge w3-margin-top">View Schedule !</a></p>
+        <p class="w3-margin-top w3-margin-top" style="justify-content: center; align-self: center;"><a href="schedule.html" class="open-button w3-round-xxlarge w3-margin-top">View Schedule !</a></p>
+    </div>
   </div> 
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -77,20 +78,6 @@ body, html {
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
 </header>
-
-<!-- About Section -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-    <div class="w3-content">
-      <div class="w3-twothird">
-        <h1>Lorem Ipsum</h1>
-        <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-  
-        <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
-  </div>
 
 <!-- Team Section -->
 <div class="w3-container" style="padding:128px 16px" id="team">
@@ -137,90 +124,12 @@ body, html {
           <h3>Dan Star</h3>
           <p class="w3-opacity">Designer</p>
           <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-margin-bottom w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          <p><button class="w3-margin-bottom w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<!-- Work Section -->
-<div class="w3-container" style="padding:128px 16px" id="work">
-  <h3 class="w3-center">OUR WORK</h3>
-  <p class="w3-center w3-large">What we've done for people</p>
-
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
-    </div>
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Pricing Section -->
-<div class="pricing">
-    <div class="grid">
-     <div class="card card1">
-       <h3>BASIC</h3>
-       <h2>Free</h2>
-       <h4>Free</h4>
-       <hr>
-       <p>10 templates</p>
-       <p>Default presets</p>
-       <a href="#">Buy now</a>
-     </div>
-      <div class="card card2">
-       <h3>PRO</h3>
-       <h2>100</h2>
-       <h4>$100</h4>
-       <hr>
-       <p>50 templates</p>
-       <p>Pro presets</p>
-       <a href="#">Buy now</a>
-     </div>
-     <div class="card card3">
-       <h3>ULTIMATE</h3>
-       <h2>250</h2>
-       <h4>$250</h4>
-       <hr>
-       <p>Unlimited templates</p>
-       <p>Ultimate presets</p>
-       <a href="#">Buy now</a>
-    </div>
-   </div>
- </div>
 
 <div class="form-popup" id="myForm">
   <form action="/action_page.php" class="form-container" method="post">
@@ -231,21 +140,8 @@ body, html {
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
-    <div class="options">
-        <input type="radio" name="radio" id="radio1" class="radio" checked/>
-        <label for="radio1">First Option</label>
-        </div>
-        
-        <div class="options">
-        <input type="radio" name="radio" id="radio2" class="radio"/>
-        <label for="radio2">Second Option</label>
-        </div>
-        
-        <div class="options">	
-        <input type="radio" name="radio" id="radio3" class="radio"/>
-        <label for="radio3">Third Option</label>
-        </div>
-    <button type="submit" class="btn w3-margin-top">Login</button>
+    <button type="button" class="btn plan"onclick="openPlan()" >Choose Plans</buttons>	
+    <button type="submit" class="btn">Login</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
@@ -321,6 +217,5 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 </script>
-
 </body>
 </html>
